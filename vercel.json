@@ -8,4 +8,3 @@
     { "src": "/api/crm-card-data", "dest": "api/crm-card-data.js" }
   ]
 }
-
