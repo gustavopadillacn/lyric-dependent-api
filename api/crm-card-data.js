@@ -1,9 +1,6 @@
 module.exports = async (req, res) => {
   const { objectId } = req.body;
 
-  // 🔍 Este objectId es el ID del contacto actual en HubSpot
-  console.log("🔍 CRM Card loaded for contact ID:", objectId);
-
   res.json({
     title: "Add Dependent",
     actions: [
