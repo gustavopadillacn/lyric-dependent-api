@@ -1,9 +1,10 @@
 {
   "version": 2,
   "builds": [
-    { "src": "api/create-dependent.js", "use": "@vercel/node" }
+    { "src": "api/*.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/api/create-dependent", "dest": "api/create-dependent.js" }
+    { "src": "/api/create-dependent", "dest": "api/create-dependent.js" },
+    { "src": "/api/crm-card-data", "dest": "api/crm-card-data.js" }
   ]
 }
