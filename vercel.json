@@ -1,8 +1,9 @@
 {
   "version": 2,
-  "functions": {
-    "api/create-dependent.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  "builds": [
+    { "src": "api/create-dependent.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/create-dependent", "dest": "api/create-dependent.js" }
+  ]
 }
