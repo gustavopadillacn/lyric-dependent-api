@@ -21,7 +21,9 @@ export default async function handler(req, res) {
     });
 
     const data = await tokenResponse.json();
-    return res.status(200).json(data);
+
+    // 👉 En lugar de solo devolver un JSON, redirigimos a una página final
+    return res.redirect(302, 'https://app.hubspot.com/contacts'); // o poné tu cuenta de pruebas
   } catch (err) {
     return res.status(500).json({ error: 'OAuth failed', details: err.message });
   }
